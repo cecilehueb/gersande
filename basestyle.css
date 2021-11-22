@@ -1,0 +1,271 @@
+/* mobile first design */
+
+@font-face {
+  font-family: "Movement-DirectBlack";
+  src: url(fonts/Movement-DirectBlack.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-DirectThin";
+  src: url(fonts/Movement-DirectThin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-IndirectBlack";
+  src: url(fonts/Movement-IndirectBlack.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-IndirectThin";
+  src: url(fonts/Movement-IndirectThin.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Movement-IndirectThin", Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
+a:active {
+  /* font-style: italic; */
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.active {
+  font-family: "Movement-DirectThin";
+  -webkit-text-stroke: 1.5px red;
+  -webkit-text-fill-color: transparent;
+}
+
+.link {
+  font-family: "Movement-IndirectBlack";
+  -webkit-text-stroke: 1.5px red;
+  -webkit-text-fill-color: transparent;
+}
+
+/* STYLES IN PAGE ORDER */
+/* HEADER */
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  font-family: "Movement-IndirectThin";
+  font-size: 1.5em;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header li {
+  list-style: none;
+  text-align: center;
+}
+
+.header .title {
+  padding-bottom: 1em;
+}
+
+/* BODY */
+
+.maincontent {
+  margin: 1em auto 0 auto;
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 25px;
+  font-size: 1.5em;
+}
+
+div.about .content p,
+div.contact .content p {
+  padding: 5px;
+  font-family: "Movement-IndirectBlack";
+  color: white;
+  margin: 2px;
+}
+
+div.about {
+  background-color: #7c6c2d;
+}
+
+div.contact {
+  background-color: #fff7ac;
+  font-size: 1em;
+  position: relative;
+}
+
+div.contact > .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work_wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project {
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 10px;
+  height: 20vh;
+}
+
+.project:hover {
+  cursor: pointer;
+  font-style: italic;
+}
+
+.project_title,
+.project_title > div {
+  font-family: "Movement-IndirectBlack";
+  color: white;
+}
+
+.project_text {
+  font-size: 0.6em;
+  color: black;
+}
+
+.img {
+  width: 100%;
+  padding: 15px;
+}
+
+.img img {
+  width: 100%;
+}
+
+/* .project:nth-child(1) {
+  background-color: #283583;
+} */
+
+.yerma1 {
+  background-color: #283583;
+  border: 3px solid #283583;
+}
+
+.project:nth-child(2) {
+  background-color: #fff7ac;
+}
+
+.project:nth-child(3) {
+  background-color: #50a833;
+}
+
+.project:nth-child(4) {
+  background-color: #f5b4d2;
+}
+
+.project:nth-child(5) {
+  background-color: #e9550d;
+}
+
+.project:nth-child(6) {
+  background-color: #7d6b2f;
+}
+
+.focus_project {
+  display: block;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: transparent;
+}
+
+.focus_project > .text > .project_title,
+.focus_project > .text > .project_title > div {
+  color: black;
+}
+
+.focus_project:hover {
+  cursor: auto;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .header li {
+    font-size: 2.5em;
+    text-align: left;
+    padding: 10px;
+    flex: 0 1 auto;
+  }
+
+  .header .title {
+    flex: 1 0 40%;
+    padding-bottom: 10px;
+  }
+
+  .maincontent {
+    font-size: 3em;
+  }
+
+  div.about .content p,
+  div.contact .content p {
+    padding: 10px;
+  }
+
+  div.contact > .content {
+    font-size: 3em;
+  }
+
+  .work_wrapper {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .project {
+    flex: 1 1 30%;
+    min-height: 35vh;
+    margin: 5px;
+  }
+
+  .focus_project {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .text {
+    flex: 0 1 30%;
+  }
+
+  .project_text {
+    font-size: 0.4em;
+  }
+
+  .img {
+    flex: 0 1 40%;
+    padding: 25px;
+  }
+}
