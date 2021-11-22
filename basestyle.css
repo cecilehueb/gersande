@@ -196,9 +196,14 @@ div.contact > .content {
   background-color: transparent;
 }
 
-.focus_project > .text > .project_title,
+/* .focus_project > .text > .project_title,
 .focus_project > .text > .project_title > div {
   color: black;
+} */
+
+.focus_project.yerma1 .project_title,
+.focus_project.yerma1 .project_text {
+  color: #283583;
 }
 
 .focus_project:hover {
