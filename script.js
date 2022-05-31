@@ -2,28 +2,28 @@ let page = document.querySelectorAll(".page");
 let header = document.querySelector(".header");
 let maincontentArr = document.querySelectorAll(".maincontent");
 
-header.addEventListener("click", function(event) {
-    if (event.target.classList.contains("page")) {
-        let targetClass = event.target.classList[1];
-        addHidden(".img");
-        addHidden(".project_text");
-        removeHidden(".project");
+// header.addEventListener("click", function(event) {
+//     if (event.target.classList.contains("page")) {
+//         let targetClass = event.target.classList[1];
+//         addHidden(".img");
+//         addHidden(".project_text");
+//         removeHidden(".project");
         
-        for(i=0; i<maincontentArr.length; i++) {
-            if (maincontentArr[i].classList.contains(targetClass)){
-                maincontentArr[i].classList.remove("hidden");
-                page[i].classList.add("active");
-            } else {
-                maincontentArr[i].classList.add("hidden");
-                page[i].classList.remove("active");
+//         for(i=0; i<maincontentArr.length; i++) {
+//             if (maincontentArr[i].classList.contains(targetClass)){
+//                 maincontentArr[i].classList.remove("hidden");
+//                 page[i].classList.add("active");
+//             } else {
+//                 maincontentArr[i].classList.add("hidden");
+//                 page[i].classList.remove("active");
 
-            };
-        };
+//             };
+//         };
 
 
-    };
+//     };
 
-}, false)
+// }, false)
 
 let workWrap = document.querySelector(".work_wrapper");
 workWrap.addEventListener("click", function(event) {

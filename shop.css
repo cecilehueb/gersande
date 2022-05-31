@@ -1,0 +1,60 @@
+.img {
+    padding: 0;
+    order: 1;
+}
+
+.img img {
+    padding: 0;
+    margin: 0;
+    order: 1;
+}
+
+.text {
+    order: 20;
+    margin: 0;
+}
+
+.project {
+    padding: 0;
+}
+
+
+.shopitem {
+
+}
+
+.instructions_shop {
+    font-size: 0.8em;
+    background-color: lightgreen;
+    border: 10px solid lightgreen;
+}
+
+.thesis_shop {
+    background-color: #3a4f9d;
+    border: 10px solid #3a4f9d;
+}
+
+.yerma_shop {
+    background-color: #c5d315;
+
+}
+
+.journal_shop {
+    background-color: #dbe38b;
+    border: 10px solid #dbe38b;
+
+}
+
+.orange_shop {
+    background-color: coral;
+    border: 10px solid coral;
+
+}
+
+.focus_project .text {
+    margin: 20px;
+}
+
+@media (min-width: 800px) { 
+   
+}

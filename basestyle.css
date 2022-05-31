@@ -87,6 +87,10 @@ a:active {
   padding-bottom: 1em;
 }
 
+.title1:hover {
+  flex: 1 1 30%;
+}
+
 /* BODY */
 
 .maincontent {
@@ -95,6 +99,8 @@ a:active {
   min-height: 50vh;
   border-radius: 25px;
   font-size: 1.5em;
+  /* padding: 30px; */
+  /* background-image: url("img/gs_test.jpeg"); */
 }
 
 div.about .content p,
@@ -132,11 +138,12 @@ div.contact > .content {
   margin: 5px 0;
   padding: 10px;
   height: 20vh;
+  box-shadow: 10px 5px 5px grey;
+  /* animation: shape 2s ease 0 1; */
 }
 
 .project:hover {
   cursor: pointer;
-  font-style: italic;
 }
 
 .project_title,
@@ -159,22 +166,24 @@ div.contact > .content {
   width: 100%;
 }
 
-/* .project:nth-child(1) {
+.project:nth-child(1) {
   background-color: #283583;
-} */
+  height: 10vh;
+}
+
+.project:nth-child(2) {
+  background-color: #fff7ac;
+  height: 10vh;
+}
 
 .yerma1 {
   background-color: #283583;
   border: 3px solid #283583;
 }
 
-.project:nth-child(2) {
-  background-color: #fff7ac;
-}
-
-.project:nth-child(3) {
+/* .project:nth-child(3) {
   background-color: #50a833;
-}
+} */
 
 .project:nth-child(4) {
   background-color: #f5b4d2;
@@ -186,6 +195,14 @@ div.contact > .content {
 
 .project:nth-child(6) {
   background-color: #7d6b2f;
+}
+
+.project:nth-child(7) {
+  background-color: lightseagreen;
+}
+
+.project:nth-child(8) {
+  background-color: orange;
 }
 
 .focus_project {
@@ -212,7 +229,7 @@ div.contact > .content {
 
 @media (min-width: 800px) {
   .wrapper {
-    width: 95%;
+    width: 90%;
   }
 
   .header {
@@ -253,8 +270,21 @@ div.contact > .content {
   .project {
     flex: 1 1 30%;
     min-height: 35vh;
-    margin: 5px;
+    margin: 20px;
+    transition: flex 250ms;
   }
+
+  .project:hover {
+    flex: 1 1 50%;
+  }
+
+  /* .title1 {
+    flex: 1 0 30%;
+  }
+
+  .title1:hover {
+    flex: 1 1 30%;
+  } */
 
   .focus_project {
     flex-flow: row nowrap;

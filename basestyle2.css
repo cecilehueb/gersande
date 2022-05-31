@@ -1,0 +1,438 @@
+/* mobile first design */
+
+@font-face {
+  font-family: "Movement-DirectBlack";
+  src: url(fonts/Movement-DirectBlack.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-DirectThin";
+  src: url(fonts/Movement-DirectThin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-IndirectBlack";
+  src: url(fonts/Movement-IndirectBlack.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Movement-IndirectThin";
+  src: url(fonts/Movement-IndirectThin.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "PirelliTrial-Regular";
+  src: url(fonts/PirelliTrial-Regular.otf) format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "PirelliTrial-Regular", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  font-style: italic;
+  cursor: pointer;
+}
+
+a:active {
+  font-style: italic;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.active {
+  font-family: "Movement-DirectThin";
+  -webkit-text-stroke: 1.5px red;
+  -webkit-text-fill-color: transparent;
+}
+
+.link {
+  font-family: "Movement-IndirectBlack";
+  -webkit-text-stroke: 1.5px red;
+  -webkit-text-fill-color: transparent;
+}
+
+/* STYLES IN PAGE ORDER */
+/* HEADER */
+.wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.kaft {
+  width: 100%;
+  flex: 2 1 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  align-self: flex-start;
+  /* border-radius: 5px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.item {
+  flex: 1 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_title {
+  font-family: "Movement-IndirectBlack";
+  color: white;
+  font-size: 1em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 3px solid white;
+  padding: 10px;
+  margin: 10px;
+  flex: 0 1 100%;
+}
+
+a .item_title:active {
+  background-color: blue;
+}
+
+
+/* BODY */
+
+.maincontent {
+  margin: 1em auto 0 auto;
+  width: 100%;
+  min-height: 50vh;
+  border-radius: 25px;
+  font-size: 1.5em;
+  flex: 0 1 90%;
+}
+
+div.project_text .content p {
+  padding: 5px;
+  font-family: "Movement-IndirectBlack";
+  color: white;
+  margin: 2px;
+  font-size: 1.2em;
+}
+
+div.project_text .content p:nth-child(1) {
+  padding-top: 25px;
+}
+
+/* div.about {
+  background-color: #7c6c2d;
+} */
+
+div.contact {
+  background-color: #fff7ac;
+  font-size: 1em;
+  position: relative;
+}
+
+div.contact > .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work_wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.project,
+.homeButton {
+  border-radius: 20px;
+  margin: 5px 0;
+  padding: 10px;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project_title,
+.project_title > div {
+  font-family: "Movement-IndirectBlack";
+  color: white;
+}
+
+.project_text {
+  font-size: 0.6em;
+  color: black;
+}
+
+.img {
+  width: 100%;
+  padding: 15px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.twentysix {
+  background-color: #5d1829;
+  border: 3px solid #5d1829;
+}
+
+.focus_project.twentysix .project_title,
+.focus_project.twentysix .project_text,
+.focus_project.twentysix .project_year {
+  color: #5d1829;
+}
+
+.yerma1 {
+  background-color: #7a3636;
+  border: 3px solid #7a3636;
+}
+
+.focus_project.yerma1 .project_title,
+.focus_project.yerma1 .project_text,
+.focus_project.yerma1 .project_year {
+  color: #7a3636;
+}
+
+.yerma2 {
+  background-color: #af4543;
+  border: 3px solid #af4543;
+}
+
+.focus_project.yerma2 .project_title,
+.focus_project.yerma2 .project_text,
+.focus_project.yerma2 .project_year {
+  color: #af4543;
+}
+
+.headquarters {
+  background-color: #d9aa00;
+  border: 3px solid #d9aa00;
+}
+
+.focus_project.headquarters .project_title,
+.focus_project.headquarters .project_text,
+.focus_project.headquarters .project_year {
+  color: #d9aa00;
+}
+
+.cityoflight {
+  background-color: #bf3e3c;
+  border: 3px solid #bf3e3c;
+}
+
+.focus_project.cityoflight .project_title,
+.focus_project.cityoflight .project_text,
+.focus_project.cityoflight .project_year {
+  color: #bf3e3c;
+}
+
+.gymfest {
+  background-color: #ffb200;
+  border: 3px solid #ffb200;
+}
+
+.focus_project.gymfest .project_title,
+.focus_project.gymfest .project_text,
+.focus_project.gymfest .project_year {
+  color: #ffb200;
+}
+
+.journal2 {
+  background-color: #e4c96f;
+  border: 3px solid #e4c96f;
+}
+
+.focus_project.journal2 .project_title,
+.focus_project.journal2 .project_text,
+.focus_project.journal2 .project_year {
+  color: #e4c96f;
+}
+
+.journal1 {
+  background-color: #e4c96f;
+  border: 3px solid #e4c96f;
+}
+
+.focus_project.journal1 .project_title,
+.focus_project.journal1 .project_text,
+.focus_project.journal1 .project_year {
+  color: #e4c96f;
+}
+
+.journal3 {
+  background-color: #e4c96f;
+  border: 3px solid #e4c96f;
+}
+
+.focus_project.journal3 .project_title,
+.focus_project.journal3 .project_text,
+.focus_project.journal3 .project_year {
+  color: #e4c96f;
+}
+
+.si18 {
+  background-color: purple;
+  border: 3px solid purple;
+}
+
+.focus_project.si18 .project_title,
+.focus_project.si18 .project_text,
+.focus_project.si18 .project_year {
+  color: purple;
+}
+
+.focus_project {
+  display: block;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: transparent;
+  overflow: scroll;
+  min-height: auto;
+}
+
+/* .focus_project > .text > .project_title,
+.focus_project > .text > .project_title > div {
+  color: black;
+} */
+
+
+
+.focus_project:hover {
+  cursor: auto;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    width: 100%;
+    flex-flow: row nowrap;
+  }
+
+  .kaft {
+    flex: 0 1 auto;
+    width: auto;
+    flex-flow: column nowrap;
+  }
+
+  .item {
+    margin-left: 2em ;
+    flex-flow: column nowrap;
+  }
+
+  .item_title {
+    font-size: 3em;
+    padding: 10px 30px
+  }
+
+  .maincontent {
+    font-size: 3em;
+  }
+
+  div.about .content p,
+  div.contact .content p {
+    padding: 10px;
+  }
+
+  div.contact > .content {
+    font-size: 3em;
+  }
+
+  .work_wrapper {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .project {
+    flex: 0 1 30%;
+    min-height: 35vh;
+    margin: 10px;
+    transition: flex 250ms;
+  }
+
+  .focus_project {
+    flex: 0 1 85%;
+    justify-content: space-between;
+  }
+
+  .text {
+    flex: 0 1 30%;
+    margin: 20px;
+  }
+
+  .text_about {
+    flex: 1 1 100%;
+  }
+
+  .project_text {
+    font-size: 0.7em;
+  }
+
+  .img {
+    padding: 25px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .img img {
+    margin: 20px auto;
+  }
+
+  div.project_text .content p {
+    font-size: 2em;
+  }
+
+  .rotate {
+    /* transform-origin: 0 0; */
+    transform: rotate(-90deg);
+    position: absolute;
+  
+    /* Legacy vendor prefixes that you probably don't need... */
+  
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+  
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+  
+    /* IE */
+    -ms-transform: rotate(-90deg);
+  
+    /* Opera */
+    -o-transform: rotate(-90deg);
+  
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  }
+
+  /* .csstransforms .item {
+    border-left: 34px solid #369;
+    padding-left: 10px;
+  } */
+}
+
+
