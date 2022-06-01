@@ -39,6 +39,7 @@ body {
 
 a:link {
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
@@ -48,6 +49,11 @@ a:hover {
 
 a:active {
   font-style: italic;
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
 
 .hidden {
@@ -75,6 +81,7 @@ a:active {
 .wrapper {
   width: 90%;
   margin: auto;
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -87,7 +94,6 @@ a:active {
   top: 0;
   margin: 0;
   align-self: flex-start;
-  /* border-radius: 5px; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -117,8 +123,51 @@ a .item_title:active {
 }
 
 
+
+
 /* BODY */
 
+/* about */
+
+.about_content {
+  position: fixed;
+  top: 20vh;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(0,0,0,0.87);
+}
+
+.about_content p {
+  font-family: "Movement-IndirectBlack";
+  font-size: 1.2em;
+  color: white;
+  margin: 5px;;
+}
+
+.about_content p:last-child {
+  margin-top: 20px;
+}
+
+span.credit {
+  font-family: "PirelliTrial-Regular";
+  font-size: 0.9em;
+}
+
+span.credit {
+  color: white;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+p.first_credit {
+  margin-top: 20px;
+}
+
+
+/* maincontent */
 .maincontent {
   margin: 1em auto 0 auto;
   width: 100%;
@@ -140,9 +189,6 @@ div.project_text .content p:nth-child(1) {
   padding-top: 25px;
 }
 
-/* div.about {
-  background-color: #7c6c2d;
-} */
 
 div.contact {
   background-color: #fff7ac;
@@ -344,8 +390,18 @@ div.contact > .content {
   }
 
   .item_title {
-    font-size: 3em;
+    font-size: 2em;
     padding: 10px 30px
+  }
+
+  .about_content {
+    width: 800px;
+    top: 25vh;
+    margin-left: -350px;
+  }
+
+  .about_content p {
+    font-size: 2em;
   }
 
   .maincontent {

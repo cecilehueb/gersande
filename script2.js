@@ -132,4 +132,16 @@ function removeHidden(className) {
     }
 }
 
+const aboutButton = document.querySelector(".about");
+const aboutContent = document.querySelector(".about_content");
+
+aboutButton.addEventListener("click", popUp, false);
+
+function popUp() {
+    aboutContent.classList.toggle("hidden");
+    console.log("something happened");
+}
+
+
+
 
