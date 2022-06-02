@@ -232,6 +232,10 @@ div.contact > .content {
   color: black;
 }
 
+.project_text p {
+  margin: 10px;
+}
+
 .img {
   width: 100%;
   padding: 15px;
@@ -248,6 +252,7 @@ div.contact > .content {
 
 .focus_project.twentysix .project_title,
 .focus_project.twentysix .project_text,
+.focus_project.twentysix .project_text p a, 
 .focus_project.twentysix .project_year {
   color: #5d1829;
 }
@@ -259,6 +264,7 @@ div.contact > .content {
 
 .focus_project.yerma1 .project_title,
 .focus_project.yerma1 .project_text,
+.focus_project.yerma1 .project_text p a,
 .focus_project.yerma1 .project_year {
   color: #7a3636;
 }
@@ -270,6 +276,7 @@ div.contact > .content {
 
 .focus_project.yerma2 .project_title,
 .focus_project.yerma2 .project_text,
+.focus_project.yerma2 .project_text p a, 
 .focus_project.yerma2 .project_year {
   color: #af4543;
 }
@@ -281,6 +288,7 @@ div.contact > .content {
 
 .focus_project.headquarters .project_title,
 .focus_project.headquarters .project_text,
+.focus_project.headquarters .project_text p a, 
 .focus_project.headquarters .project_year {
   color: #d9aa00;
 }
@@ -292,6 +300,7 @@ div.contact > .content {
 
 .focus_project.cityoflight .project_title,
 .focus_project.cityoflight .project_text,
+.focus_project.cityoflight .project_text p a,
 .focus_project.cityoflight .project_year {
   color: #bf3e3c;
 }
@@ -303,6 +312,7 @@ div.contact > .content {
 
 .focus_project.gymfest .project_title,
 .focus_project.gymfest .project_text,
+.focus_project.gymfest .project_text p a, 
 .focus_project.gymfest .project_year {
   color: #ffb200;
 }
@@ -314,6 +324,7 @@ div.contact > .content {
 
 .focus_project.journal2 .project_title,
 .focus_project.journal2 .project_text,
+.focus_project.journal2 .project_text p a, 
 .focus_project.journal2 .project_year {
   color: #e4c96f;
 }
@@ -325,6 +336,7 @@ div.contact > .content {
 
 .focus_project.journal1 .project_title,
 .focus_project.journal1 .project_text,
+.focus_project.journal1 .project_text p a, 
 .focus_project.journal1 .project_year {
   color: #e4c96f;
 }
@@ -336,6 +348,7 @@ div.contact > .content {
 
 .focus_project.journal3 .project_title,
 .focus_project.journal3 .project_text,
+.focus_project.journal3 .project_text p a, 
 .focus_project.journal3 .project_year {
   color: #e4c96f;
 }
@@ -347,6 +360,7 @@ div.contact > .content {
 
 .focus_project.si18 .project_title,
 .focus_project.si18 .project_text,
+.focus_project.si18 .project_text p a, 
 .focus_project.si18 .project_year {
   color: purple;
 }
