@@ -23,6 +23,10 @@
 
 }
 
+.project_title {
+    font-family: "Pirelli-Regular";
+}
+
 .instructions_shop {
     font-size: 0.8em;
     background-color: lightgreen;
@@ -39,15 +43,9 @@
 
 }
 
-.journal_shop {
+.space_shop {
     background-color: #dbe38b;
     border: 10px solid #dbe38b;
-
-}
-
-.orange_shop {
-    background-color: coral;
-    border: 10px solid coral;
 
 }
 

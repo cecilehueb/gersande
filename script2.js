@@ -71,6 +71,7 @@ let maincontentArr = document.querySelectorAll(".maincontent");
 // }, false)
 
 // bubbles at clicks on .workWrap
+// if 'about' shows, it toggles hidden
 // removes 'focus_project' from all .project
 // adds 'hidden' to all .project_text and .img
 // then adds 'focus_project' to the clicked element
@@ -78,7 +79,13 @@ let maincontentArr = document.querySelectorAll(".maincontent");
 
 let workWrap = document.querySelector(".work_wrapper");
 workWrap.addEventListener("click", function(event) {
+    if (!(aboutContent.classList.contains('hidden'))) { 
+        aboutContent.classList.toggle("hidden");
+    };
+
     if (event.target.matches(".clickable")) {
+
+
         let projectArr = document.querySelectorAll(".project");
         for (i=0; i<projectArr.length; i++) {
             projectArr[i].classList.remove("focus_project");

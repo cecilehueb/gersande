@@ -21,13 +21,13 @@
 }
 
 @font-face {
-  font-family: "PirelliTrial-Regular";
-  src: url(fonts/PirelliTrial-Regular.otf) format("opentype");
+  font-family: "Pirelli-Regular";
+  src: url(fonts/pirelli-regular.woff) format("opentype");
 }
 
 * {
   box-sizing: border-box;
-  font-family: "PirelliTrial-Regular", Helvetica, sans-serif;
+  font-family: "Pirelli-Regular", Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -141,7 +141,7 @@ a .item_title:active {
 }
 
 .about_content p {
-  font-family: "Movement-IndirectBlack";
+  font-family: "Pirelli-Regular";
   font-size: 1.2em;
   color: white;
   margin: 5px;;
@@ -152,7 +152,7 @@ a .item_title:active {
 }
 
 span.credit {
-  font-family: "PirelliTrial-Regular";
+  font-family: "Pirelli-Regular";
   font-size: 0.9em;
 }
 
@@ -410,12 +410,12 @@ div.contact > .content {
 
   .about_content {
     width: 800px;
-    top: 25vh;
+    top: 15vh;
     margin-left: -350px;
   }
 
   .about_content p {
-    font-size: 2em;
+    font-size: 1.2em;
   }
 
   .maincontent {
