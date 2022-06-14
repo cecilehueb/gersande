@@ -246,39 +246,39 @@ div.contact > .content {
 }
 
 .twentysix {
-  background-color: #5d1829;
-  border: 3px solid #5d1829;
+  background-color: #FF88DD;
+  border: 3px solid #FF88DD;
 }
 
 .focus_project.twentysix .project_title,
 .focus_project.twentysix .project_text,
 .focus_project.twentysix .project_text p a, 
 .focus_project.twentysix .project_year {
-  color: #5d1829;
+  color: #FF88DD;
 }
 
 .yerma1 {
-  background-color: #7a3636;
-  border: 3px solid #7a3636;
+  background-color: #FFDF6D;
+  border: 3px solid #FFDF6D;
 }
 
 .focus_project.yerma1 .project_title,
 .focus_project.yerma1 .project_text,
 .focus_project.yerma1 .project_text p a,
 .focus_project.yerma1 .project_year {
-  color: #7a3636;
+  color: #FFDF6D;
 }
 
 .yerma2 {
-  background-color: #af4543;
-  border: 3px solid #af4543;
+  background-color: #FF956D;
+  border: 3px solid #FF956D;
 }
 
 .focus_project.yerma2 .project_title,
 .focus_project.yerma2 .project_text,
 .focus_project.yerma2 .project_text p a, 
 .focus_project.yerma2 .project_year {
-  color: #af4543;
+  color: #FF956D;
 }
 
 .headquarters {
@@ -294,15 +294,15 @@ div.contact > .content {
 }
 
 .cityoflight {
-  background-color: #bf3e3c;
-  border: 3px solid #bf3e3c;
+  background-color: #FF8A5E ;
+  border: 3px solid #FF8A5E ;
 }
 
 .focus_project.cityoflight .project_title,
 .focus_project.cityoflight .project_text,
 .focus_project.cityoflight .project_text p a,
 .focus_project.cityoflight .project_year {
-  color: #bf3e3c;
+  color: #FF8A5E;
 }
 
 .gymfest {
@@ -354,15 +354,15 @@ div.contact > .content {
 }
 
 .si18 {
-  background-color: purple;
-  border: 3px solid purple;
+  background-color: #FF66CC;
+  border: 3px solid #FF66CC;
 }
 
 .focus_project.si18 .project_title,
 .focus_project.si18 .project_text,
 .focus_project.si18 .project_text p a, 
 .focus_project.si18 .project_year {
-  color: purple;
+  color: #FF66CC;
 }
 
 .focus_project {
