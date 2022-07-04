@@ -85,6 +85,24 @@ a:visited {
   
 }
 
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
 /* STYLES IN PAGE ORDER */
 /* HEADER */
 .wrapper {
@@ -123,8 +141,7 @@ a:visited {
   border-bottom-right-radius: 20px;
   border: 3px solid white;
   padding: 10px;
-  margin: 10px;
-  flex: 0 1 100%;
+  margin: auto;
 }
 
 a .item_title:active {
@@ -140,10 +157,10 @@ a .item_title:active {
 
 .about_content {
   position: fixed;
-  top: 20vh;
-  width: 300px;
+  top: 15vh;
+  width: 350px;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -175px;
   padding: 10px;
   border-radius: 20px;
   background-color: rgb(0,0,0,0.87);
@@ -388,8 +405,6 @@ div.contact > .content {
   color: black;
 } */
 
-
-
 .focus_project:hover {
   cursor: auto;
 }
@@ -422,9 +437,11 @@ div.contact > .content {
   }
 
   .about_content {
-    width: 800px;
-    top: 15vh;
-    margin-left: -350px;
+    width: 900px;
+    top: 16vh;
+    margin-left: -400px;
+    height: 600px;
+    overflow: auto;
   }
 
   .about_content p {
