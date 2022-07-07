@@ -28,9 +28,12 @@
 * {
   box-sizing: border-box;
   font-family: "Pirelli-Regular", Helvetica, sans-serif;
+  font-size: 1em;
   margin: 0;
   padding: 0;
 }
+
+
 
 body {
   width: 100%;
@@ -76,6 +79,30 @@ a:visited {
   -webkit-text-fill-color: transparent;
 }
 
+.movementBlack {
+  font-family: "Movement-IndirectBlack";
+  font-size: 2em;
+  
+}
+
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px;
+}
+
 /* STYLES IN PAGE ORDER */
 /* HEADER */
 .wrapper {
@@ -109,13 +136,12 @@ a:visited {
 .item_title {
   font-family: "Movement-IndirectBlack";
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 3px solid white;
   padding: 10px;
-  margin: 10px;
-  flex: 0 1 100%;
+  margin: auto;
 }
 
 a .item_title:active {
@@ -131,18 +157,16 @@ a .item_title:active {
 
 .about_content {
   position: fixed;
-  top: 20vh;
-  width: 300px;
+  top: 15vh;
+  width: 350px;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -175px;
   padding: 10px;
   border-radius: 20px;
   background-color: rgb(0,0,0,0.87);
 }
 
 .about_content p {
-  font-family: "Pirelli-Regular";
-  font-size: 1.2em;
   color: white;
   margin: 5px;;
 }
@@ -152,8 +176,8 @@ a .item_title:active {
 }
 
 span.credit {
-  font-family: "Pirelli-Regular";
-  font-size: 0.9em;
+  /* font-family: "Pirelli-Regular"; */
+  /* font-size: 0.7em; */
 }
 
 span.credit {
@@ -173,16 +197,16 @@ p.first_credit {
   width: 100%;
   min-height: 50vh;
   border-radius: 25px;
-  font-size: 1.5em;
+  font-size: 1em;
   flex: 0 1 90%;
 }
 
 div.project_text .content p {
   padding: 5px;
-  font-family: "Movement-IndirectBlack";
+  /* font-family: "Movement-IndirectBlack"; */
   color: white;
   margin: 2px;
-  font-size: 1.2em;
+  /* font-size: 0.7em; */
 }
 
 div.project_text .content p:nth-child(1) {
@@ -192,7 +216,7 @@ div.project_text .content p:nth-child(1) {
 
 div.contact {
   background-color: #fff7ac;
-  font-size: 1em;
+  /* font-size: 1em; */
   position: relative;
 }
 
@@ -224,11 +248,12 @@ div.contact > .content {
 .project_title,
 .project_title > div {
   font-family: "Movement-IndirectBlack";
+  font-size: 1.2em;
   color: white;
 }
 
 .project_text {
-  font-size: 0.6em;
+  /* font-size: 0.6em; */
   color: black;
 }
 
@@ -380,13 +405,16 @@ div.contact > .content {
   color: black;
 } */
 
-
-
 .focus_project:hover {
   cursor: auto;
 }
 
 @media (min-width: 800px) {
+  
+  body {
+    font-size: 2em;
+  }
+
   .wrapper {
     width: 100%;
     flex-flow: row nowrap;
@@ -399,27 +427,34 @@ div.contact > .content {
   }
 
   .item {
-    margin-left: 2em ;
+    margin-left: 1em;
     flex-flow: column nowrap;
   }
 
   .item_title {
-    font-size: 2em;
+    font-size: 1em;
     padding: 10px 30px
   }
 
   .about_content {
-    width: 800px;
-    top: 15vh;
-    margin-left: -350px;
+    width: 900px;
+    top: 16vh;
+    margin-left: -400px;
+    height: 600px;
+    overflow: auto;
   }
 
   .about_content p {
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
   }
 
   .maincontent {
-    font-size: 3em;
+    /* font-size: 1.2em;  */
+  }
+
+  .project_title,
+  .project_title > div  {
+    font-size: 1em;
   }
 
   div.about .content p,
@@ -428,7 +463,7 @@ div.contact > .content {
   }
 
   div.contact > .content {
-    font-size: 3em;
+    /* font-size: 3em; */
   }
 
   .work_wrapper {
@@ -458,7 +493,7 @@ div.contact > .content {
   }
 
   .project_text {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
   }
 
   .img {
