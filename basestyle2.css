@@ -402,6 +402,30 @@ div.contact > .content {
   color: #FF02AA;
 }
 
+.unpublic {
+  background-color: #D8B233;
+  border: 3px solid #D8B233;
+}
+
+.focus_project.unpublic .project_title,
+.focus_project.unpublic .project_text,
+.focus_project.unpublic .project_text p a, 
+.focus_project.unpublic .project_year {
+  color: #D8B233;
+}
+
+.yermaradio {
+  background-color: #FFDF6D;
+  border: 3px solid #FFDF6D;
+}
+
+.focus_project.yermaradio .project_title,
+.focus_project.yermaradio .project_text,
+.focus_project.yermaradio .project_text p a, 
+.focus_project.yermaradio .project_year {
+  color: #FFDF6D;
+}
+
 .focus_project {
   display: block;
   height: auto;
