@@ -378,16 +378,28 @@ div.contact > .content {
   color: #e4c96f;
 }
 
-.si18 {
+.si17 {
   background-color: #FF66CC;
   border: 3px solid #FF66CC;
+}
+
+.focus_project.si17 .project_title,
+.focus_project.si17 .project_text,
+.focus_project.si17 .project_text p a, 
+.focus_project.si17 .project_year {
+  color: #FF66CC;
+}
+
+.si18 {
+  background-color: #FF02AA;
+  border: 3px solid #FF02AA;
 }
 
 .focus_project.si18 .project_title,
 .focus_project.si18 .project_text,
 .focus_project.si18 .project_text p a, 
 .focus_project.si18 .project_year {
-  color: #FF66CC;
+  color: #FF02AA;
 }
 
 .focus_project {
