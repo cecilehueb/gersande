@@ -136,7 +136,7 @@ a:visited {
 .item_title {
   font-family: "Movement-IndirectBlack";
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 3px solid white;
@@ -250,7 +250,7 @@ div.contact > .content {
 .project_title,
 .project_title > div {
   font-family: "Movement-IndirectBlack";
-  font-size: 1.2em;
+  font-size: 1em;
   color: white;
 }
 
@@ -380,16 +380,52 @@ div.contact > .content {
   color: #e4c96f;
 }
 
-.si18 {
+.si17 {
   background-color: #FF66CC;
   border: 3px solid #FF66CC;
+}
+
+.focus_project.si17 .project_title,
+.focus_project.si17 .project_text,
+.focus_project.si17 .project_text p a, 
+.focus_project.si17 .project_year {
+  color: #FF66CC;
+}
+
+.si18 {
+  background-color: #FF02AA;
+  border: 3px solid #FF02AA;
 }
 
 .focus_project.si18 .project_title,
 .focus_project.si18 .project_text,
 .focus_project.si18 .project_text p a, 
 .focus_project.si18 .project_year {
-  color: #FF66CC;
+  color: #FF02AA;
+}
+
+.unpublic {
+  background-color: #D8B233;
+  border: 3px solid #D8B233;
+}
+
+.focus_project.unpublic .project_title,
+.focus_project.unpublic .project_text,
+.focus_project.unpublic .project_text p a, 
+.focus_project.unpublic .project_year {
+  color: #D8B233;
+}
+
+.yermaradio {
+  background-color: #FFDF6D;
+  border: 3px solid #FFDF6D;
+}
+
+.focus_project.yermaradio .project_title,
+.focus_project.yermaradio .project_text,
+.focus_project.yermaradio .project_text p a, 
+.focus_project.yermaradio .project_year {
+  color: #FFDF6D;
 }
 
 .focus_project {
