@@ -158,12 +158,14 @@ a .item_title:active {
 .about_content {
   position: fixed;
   top: 15vh;
-  width: 350px;
+  width: 300px;
+  height: 400px;
   left: 50%;
-  margin-left: -175px;
+  margin-left: -150px;
   padding: 10px;
   border-radius: 20px;
   background-color: rgb(0,0,0,0.87);
+  overflow: auto;
 }
 
 .about_content p {
