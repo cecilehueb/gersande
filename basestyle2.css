@@ -428,6 +428,18 @@ div.contact > .content {
   color: #FFDF6D;
 }
 
+.thegameofbeing {
+  background-color: #a78300;
+  border: 3px solid #a78300;
+}
+
+.focus_project.thegameofbeing .project_title,
+.focus_project.thegameofbeing .project_text,
+.focus_project.thegameofbeing .project_text p a, 
+.focus_project.thegameofbeing .project_year {
+  color: #a78300
+}
+
 .focus_project {
   display: block;
   height: auto;
