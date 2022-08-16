@@ -416,6 +416,30 @@ div.contact > .content {
   color: #D8B233;
 }
 
+.tgob {
+  background-color: #D9AA00;
+  border: 3px solid #D9AA00;
+}
+
+.focus_project.tgob .project_title,
+.focus_project.tgob .project_text,
+.focus_project.tgob .project_text p a, 
+.focus_project.tgob .project_year {
+  color: #D9AA00;
+}
+
+.tgob1 {
+  background-color: #A78300;
+  border: 3px solid #A78300;
+}
+
+.focus_project.tgob1 .project_title,
+.focus_project.tgob1.project_text,
+.focus_project.tgob1 .project_text p a, 
+.focus_project.tgob1 .project_year {
+  color: #A78300;
+}
+
 .yermaradio {
   background-color: #FFDF6D;
   border: 3px solid #FFDF6D;
@@ -426,18 +450,6 @@ div.contact > .content {
 .focus_project.yermaradio .project_text p a, 
 .focus_project.yermaradio .project_year {
   color: #FFDF6D;
-}
-
-.thegameofbeing {
-  background-color: #a78300;
-  border: 3px solid #a78300;
-}
-
-.focus_project.thegameofbeing .project_title,
-.focus_project.thegameofbeing .project_text,
-.focus_project.thegameofbeing .project_text p a, 
-.focus_project.thegameofbeing .project_year {
-  color: #a78300
 }
 
 .focus_project {
