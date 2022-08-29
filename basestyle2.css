@@ -434,7 +434,7 @@ div.contact > .content {
   display: flex;
   flex-flow: column nowrap;
   background-color: transparent;
-  overflow: scroll;
+  overflow: hidden;
   min-height: auto;
 }
 
